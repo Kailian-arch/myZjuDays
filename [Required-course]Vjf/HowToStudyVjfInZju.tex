@@ -1,0 +1,153 @@
+\documentclass[10pt]{article}
+% \documentclass[10pt]{ctexart}
+ 
+% \title{How To Study English In ZJU }
+ 
+\usepackage{indentfirst}
+\usepackage{capt-of}
+\usepackage{hologo}
+
+% \usepackage{appendix}
+ 
+% for chart edition
+\usepackage{chngpage}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{fontspec}
+\usepackage{geometry}
+\usepackage{ctex}
+
+\geometry{a4paper,scale=0.8}
+\setromanfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont[Color={0019D4}]{Courier New}
+ 
+ 
+% \title{ My Note For }
+\author{Kailian Jacy}
+\setcounter{page}{1}
+ 
+\begin{document}
+ 
+% set frontpage unlock:
+\begin{titlepage}
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+	\includegraphics[width=8cm]{fig/zjulogo.png}\\[1cm] 
+	\center 
+	\quad\\[1.5cm]
+	\textsl{\Large Zhejiang University }\\[0.5cm] 
+	\textsl{\large School of Architecture And Civil Engineering}\\[0.5cm] 
+	\makeatletter
+	\HRule \\[0.4cm]
+	{ \huge \bfseries How To Study Vjf in ZJU}\\[0.4cm] 
+	\HRule \\[1.5cm]
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushleft} \large
+			\emph{Author:}\\
+			\@author 
+		\end{flushleft}
+	\end{minipage}
+	~
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushright} \large
+			\emph{Supervisor:} \\
+			\textup{None}
+		\end{flushright}
+	\end{minipage}\\[3cm]
+	\makeatother
+	{\large An Assignment Not for Homework but for better future}\\[0.5cm]
+	{\large \emph{No Class Number here}}\\[0.5cm]
+	{\large \today}\\[2cm] 
+	\vfill 
+\end{titlepage}
+
+ 
+\setlength{\parindent}{2em}
+ 
+% \twocolumn[{%
+% \maketitle
+% \begin{center}
+%     \centering
+%     \includegraphics[width=.9\linewidth,height=4cm]{example-image-golden}
+%     \captionof{figure}{Teaser Image}
+% \end{center}%
+% }]
+% \maketitle
+ 
+% \abstract
+ 
+% \keywords ,
+ 
+\section{Terminal Test: take 19 summer paper for example}
+
+In my opinion, to solve what you should solve and get points you deserve, is a success in math exam. The very first goal you need to achieve is eliminating your careless fault. When traveling through this paper, I found myself made these mistakes:
+\begin{itemize}
+	\item \emph{Made Differenciation to part of the formula but not the whole.} Get yourself READY WHEN MAKING CALCULATION.
+	\item \emph{Wrongly Memorized the Formula And Got wrong answer}. As for unfamiliar formula, you'd better derive the formula. This may occupy some of your time, but not a waste of time. 
+	\item \emph{For wrong calculation, you find your answer strange and you can't push it further anymore.} Check your answer from time to time. 100\% accuracy is fundemental requirement of getting a good grade.
+\end{itemize}
+
+and through the experience, I found some of characteristics of the VJF papaer:
+\emph{1. Large difficulty Gradient.} You'll find 6-7 questions in the paper are basic and needs only simple calculation. But there are still 3-4 difficult questions, which could challenge everybody. What you should focus on is these easy questions -- don't get yourself excessively absorbed in the difficulties. 
+\emph{2. Require in-depth thinking 'bout the formula, Like taylor.} There are several special ways to simplify the calculation which are not mentioned in the class at all. You should find them in your daily homework, probing for the questions you want to know but not need to know.
+
+\section{Points You need To get}
+\subsection{About Taylor and Mclaughlin formula.}
+
+common to see:
+\begin{equation*}
+	$$\sin x = x  - \frac{1}{3!} x^{3} + \frac{1}{5!} x ^{5} + ...$$
+	$$\cos x= 1 - \frac{1}{2!} x ^{2} + \frac{1}{4!} x ^{4} + ... $$
+	$$\tan x = x + \frac{1}{3}x^{3}+\frac{2}{15}x^{5}+\dots $$
+	$$\arctan x  = x - \frac{1}{3}x^{3} + o(x^{4})$$
+	$$ln(1+x)= \frac{1}{1}x - \frac{1}{2}x^{2} + \frac{1}{3} x^{3} - \dots$$
+	$$e^{x} =  1 + \frac{1}{1!}x + \frac{1}{2!}x^{2} + \frac{1}{3!} x^{3} +...$$
+	$$(1+x)^{a} = 1 + C^{1}_{a}x^{1} + C^{2}_{a-1}x^{2} + ...$$
+\end{equation*}
+
+You'll find it special that: 
+$sin$ and $cos$ 隔位增加。 sin 从 x 开始 cos 从 1 开始 但是每个都是先正后负 隔位增加。 
+$tan$ 相比之下就比较奇怪 有比较奇怪的系数和稳定的增长（可能是除出来的）。 但是由于是 sin 除以一个近似于 1 的数字，它也是和 sin 一样隔位增加。 
+$aectan$ 和 tan 似乎有种奇怪的对应关系。 tan 由于除出来符号是不变的，但是 arctan 的行为正好和 tan 相反。 正负正负， 而且系数也正好是相反数或相同。
+\emph{注意： } 在这些里面 只有 ln(1+x) 是不带阶乘的。 系数特点：
+\begin{itemize}
+	\item $tan arctan$ 需要记住的奇怪系数
+	\item $ln(1+x)$ 不阶乘的奇怪函数 ln 和 e 都是连续的。
+	\item $e^{x} sin cos$ 正负正负轮换的系数 其中 e 是连续 sin cos 是隔位。
+\end{itemize}
+ 希望明天早上起来还能记得。
+
+
+
+
+
+ 
+% add charts and appendix.
+% \begin{appendices}
+ 
+% % \chapter{Your Appendix Name}
+ 
+% \begin{table}[!bhp]
+% \centering
+% \begin{adjustwidth}{-7cm}{0cm}
+ 
+%  \begin{tabular}{|p{.2\textwidth}| p{.2\textwidth}| m{.5\textwidth}|}
+ 
+% \hline
+% item & item &
+ 
+% % \bottomrule
+% \end{tabular}
+% \label{tab:example}
+%     \caption{example chart.}
+% \end{adjustwidth}
+% \end{table}
+ 
+%   \end{appendices}
+ 
+\acknowledgements
+Thank you for reading
+ 
+\bibliography{}
+ 
+\end{document}
